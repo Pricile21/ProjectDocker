@@ -41,7 +41,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: gaelle18/your-repo-name:latest
+        tags: pricile/dockerproject:tagname
 
   deploy:
     runs-on: ubuntu-latest
@@ -54,4 +54,5 @@ jobs:
         -H "Accept: application/vnd.github.v3+json" \
         -H "Authorization: token ${{ secrets.RENDER_API_KEY }}" \
         https://api.render.com/deploy/srv-cXXXXXXXXX
+
 
