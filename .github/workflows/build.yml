@@ -11,17 +11,17 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v2
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v2
       with:
         python-version: '3.8'
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r "C:\Users\ROYAL COMPUTER\Desktop\02-Action-In-Action\backend\requirements.txt"
+        pip install -r C:/Users/ROYAL COMPUTER/Desktop/02-Action-In-Action/backend/requirements.txt
 
     - name: Run tests
       run: |
@@ -54,4 +54,3 @@ jobs:
         -H "Accept: application/vnd.github.v3+json" \
         -H "Authorization: token ${{ secrets.RENDER_API_KEY }}" \
         https://api.render.com/deploy/srv-cXXXXXXXXX
-
