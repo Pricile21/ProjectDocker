@@ -1,4 +1,5 @@
-name: Build and Deploy
+
+        name: Build and Deploy
 
 on:
   push:
@@ -54,5 +55,3 @@ jobs:
         -H "Accept: application/vnd.github.v3+json" \
         -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}" \
         https://api.render.com/deploy/srv-cXXXXXXXXX
-
-
