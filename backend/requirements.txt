@@ -4,3 +4,4 @@ uvicorn
 #python-multipart
 tensorflow
 pillow
+pytest>=6.0.0
